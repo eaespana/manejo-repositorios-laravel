@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\RepositoryController AS Repository;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,3 +22,6 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::resource('repositories', Repository::class)
+                ->middleware('auth:sanctum');
