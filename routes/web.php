@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\RepositoryController AS Repository;
+use App\Http\Controllers\PageController AS Page;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Page::class, 'home']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
