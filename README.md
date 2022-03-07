@@ -62,3 +62,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Curso Básico de Testing con PHP y Laravel
+
+* Manejo de pruebas con PHPUnit famework de testing de PHP.
+* Diseño pruebas unitarias a través de afirmaciones (assertions).
+* Desarrollar una aplicación web cuyo funcionamiento se base en pruebas.
+* Personalizar métodos de prueba para Laravel.
+* Aplicar accessors y mutators a pruebas unitarias.
+
+# Curso platzi
+
+* https://platzi.com/cursos/laravel-testing/
